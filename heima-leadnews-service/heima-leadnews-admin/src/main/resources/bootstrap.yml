@@ -1,0 +1,13 @@
+server:
+  port: 51901
+spring:
+  application:
+    name: leadnews-admin
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.169.3:8848
+      config:
+        #可以自动拉取leadnews-user.yml
+        server-addr: 192.168.169.3:8848
+        file-extension: yml
